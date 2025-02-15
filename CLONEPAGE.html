@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIT Warangal Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #00416a;
+            color: white;
+        }
+        .logo img {
+            height: 100px;
+        }
+        .header h1 {
+            margin-left: 15px;
+        }
+        /* Navbar */
+        .navbar {
+            background: #00264d;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .navbar ul li:hover {
+            background: #00509e;
+            border-radius: 5px;
+        }
+        /* Announcements */
+        .announcements {
+            background: #ffd700;
+            padding: 10px;
+            overflow: hidden;
+        }
+        .announcements marquee {
+            font-weight: bold;
+            color: #d9534f;
+        }
+        
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 10s infinite;
+        }
+        .slides img {
+            width: 100%;
+            height: 400px;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0%); }
+        }
+        
+        .news-events {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .news, .events {
+            width: 45%;
+            background: white;
+            padding: 15px;
+            box-shadow: 0px 0px 10px #ccc;
+            border-radius: 5px;
+        }
+        /* Campus Life */
+        .campus-life {
+            text-align: center;
+            padding: 20px;
+        }
+        .campus-life img {
+            width: 250px;
+            height: 180px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="https://www.facultyplus.com/wp-content/uploads/2024/08/nit-logo-jpeg.png" alt="NITW Logo">
+        </div>
+        <h1>NIT Warangal</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>Departments</li>
+            <li>Admissions</li>
+            <li>Research</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <!-- Announcements -->
+    <div class="announcements">
+        <marquee>Admissions Open for 2025 | Campus Placements 2024 Updates | Convocation 2025 Date Announced</marquee>
+    </div>
+
+    <!-- Image Slider -->
+    <div class="slider">
+        <div class="slides">
+            <img src="https://nitw.ac.in/api/static/files/MoU_L&TIPM_2024-5-21-17-12-3.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsxWxXvrshxRK82vMPlCW8VL_58SBBbQlwQw&s">
+            <img src="https://nitw.ac.in/api/static/files/Vigilance_Awareness_Week_2024_(1)_2024-10-30-12-31-24.jpg">
+        </div>
+    </div>
+
+    <!-- News & Events -->
+    <div class="news-events">
+        <div class="news">
+            <h2>Latest News</h2>
+            <ul>
+                <li>New Research Labs Inaugurated</li>
+                <li>MoU signed with IIT Hyderabad</li>
+                <li>Convocation Ceremony 2025</li>
+            </ul>
+        </div>
+        <div class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Tech Fest 2025 - March 15</li>
+                <li>Alumni Meet - April 5</li>
+                <li>Sports Day - May 10</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Campus Life -->
+    <div class="campus-life">
+        <h2>Campus Life</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0bbTqFo6BLrmYfam38qxLN5SJk4MTnYwD-g&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbRhMgqiudRPY40PTTe7u20-jPIij4k3qcEg&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE2FVOeQ-VBmz2Qlzq6rPfE5VVmQx8tDK9tg&s">
+    </div>
+
+</body>
+</html>
